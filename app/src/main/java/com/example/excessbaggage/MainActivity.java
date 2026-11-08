@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
 
     // Replace this with your actual GitHub repository URL later
     private static final String APP_URL =
-            "https://github.com/your-username/BagWise";
+            "https://github.com/elisefeaa/Bag-Wise";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

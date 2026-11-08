@@ -1,13 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <!-- Application Name -->
+    <!-- Application Information -->
     <string name="app_name">Bag Wise</string>
-
-    <!-- Application Tagline -->
     <string name="app_tagline">Pack Smart. Fly Easy.</string>
-
-    <!-- Application Description -->
     <string name="app_description">Your smart companion for calculating excess baggage fees.</string>
+
+    <!-- About Page -->
+    <string name="about_title">About Bag Wise</string>
+    <string name="about_icon_description">Bag Wise app icon</string>
+    <string name="about_app_name">BAG WISE</string>
+
+    <string name="about_section_title">ABOUT THE APPLICATION</string>
+    <string name="about_description">Bag Wise is a mobile application designed to help travellers estimate their excess baggage fees before travelling. Users can enter their baggage weight, select their ticket class and provide the excess baggage rate to calculate the estimated total payment, including service tax.</string>
+
+    <!-- Developer Information -->
+    <string name="developer_section_title">DEVELOPER INFORMATION</string>
+    <string name="developer_name_label">Developer Name</string>
+    <string name="developer_name">Nurelise Sofea Binti Mohamed Faezal</string>
+    <string name="student_number_label">Student Number</string>
+    <string name="student_number">2024274304</string>
+    <string name="class_group_label">Class Group</string>
+    <string name="class_group">CDCS2405A</string>
+    <string name="programme_code_label">Programme Code</string>
+    <string name="programme_code">ICT602</string>
+
+    <!-- Application Website -->
+    <string name="app_website_title">APP WEBSITE</string>
+    <string name="github_repository">GitHub Repository</string>
+    <string name="github_description">Visit the Bag Wise source code repository.</string>
+    <string name="app_url">https://github.com/elisefeaa/Bag-Wise</string>
+
+    <!-- Copyright -->
+    <string name="copyright">© 2026 Bag Wise. All Rights Reserved.</string>
 
 </resources>

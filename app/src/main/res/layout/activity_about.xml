@@ -13,12 +13,13 @@
         android:layout_height="?attr/actionBarSize"
         android:background="#173B68"
         android:elevation="4dp"
-        android:title="About Bag Wise"
+        android:title="@string/about_title"
         android:titleTextColor="#FFFFFF" />
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:fillViewport="true">
 
         <LinearLayout
@@ -33,14 +34,14 @@
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:src="@drawable/ic_app_icon"
-                android:contentDescription="Bag Wise app icon"
+                android:contentDescription="@string/about_icon_description"
                 android:layout_marginTop="15dp"
                 android:layout_marginBottom="12dp" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="BAG WISE"
+                android:text="@string/about_app_name"
                 android:textColor="#173B68"
                 android:textSize="26sp"
                 android:textStyle="bold"
@@ -69,7 +70,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="ABOUT THE APPLICATION"
+                    android:text="@string/about_section_title"
                     android:textColor="#173B68"
                     android:textSize="16sp"
                     android:textStyle="bold"
@@ -78,7 +79,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Bag Wise is a mobile application designed to help travellers estimate their excess baggage fees before travelling. Users can enter their baggage weight, select their ticket class and provide the excess baggage rate to calculate the estimated total payment, including service tax."
+                    android:text="@string/about_description"
                     android:textColor="#475569"
                     android:textSize="14sp"
                     android:lineSpacingExtra="5dp" />
@@ -98,7 +99,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="DEVELOPER INFORMATION"
+                    android:text="@string/developer_section_title"
                     android:textColor="#173B68"
                     android:textSize="16sp"
                     android:textStyle="bold"
@@ -107,7 +108,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Developer Name"
+                    android:text="@string/developer_name_label"
                     android:textColor="#64748B"
                     android:textSize="12sp"
                     android:textStyle="bold" />
@@ -115,7 +116,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Nurelise Sofea Binti Mohamed Faezal"
+                    android:text="@string/developer_name"
                     android:textColor="#173B68"
                     android:textSize="14sp"
                     android:layout_marginBottom="14dp" />
@@ -123,7 +124,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Student Number"
+                    android:text="@string/student_number_label"
                     android:textColor="#64748B"
                     android:textSize="12sp"
                     android:textStyle="bold" />
@@ -131,7 +132,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="2024274304"
+                    android:text="@string/student_number"
                     android:textColor="#173B68"
                     android:textSize="14sp"
                     android:layout_marginBottom="14dp" />
@@ -139,7 +140,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Class Group"
+                    android:text="@string/class_group_label"
                     android:textColor="#64748B"
                     android:textSize="12sp"
                     android:textStyle="bold" />
@@ -147,7 +148,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="CDCS2405A"
+                    android:text="@string/class_group"
                     android:textColor="#173B68"
                     android:textSize="14sp"
                     android:layout_marginBottom="14dp" />
@@ -155,7 +156,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Programme Code"
+                    android:text="@string/programme_code_label"
                     android:textColor="#64748B"
                     android:textSize="12sp"
                     android:textStyle="bold" />
@@ -163,7 +164,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="ICT602"
+                    android:text="@string/programme_code"
                     android:textColor="#173B68"
                     android:textSize="14sp" />
 
@@ -182,7 +183,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="APP WEBSITE"
+                    android:text="@string/app_website_title"
                     android:textColor="#173B68"
                     android:textSize="16sp"
                     android:textStyle="bold"
@@ -192,16 +193,15 @@
                     android:id="@+id/tvAppWebsite"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="GitHub Repository"
+                    android:text="@string/app_url"
                     android:textColor="#245B91"
                     android:textSize="14sp"
-                    android:autoLink="web"
-                    android:linksClickable="true" />
-
+                    android:clickable="true"
+                    android:focusable="true" />
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Visit the Bag Wise source code repository."
+                    android:text="@string/github_description"
                     android:textColor="#64748B"
                     android:textSize="12sp"
                     android:layout_marginTop="7dp" />
@@ -212,7 +212,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="© 2026 Bag Wise. All Rights Reserved."
+                android:text="@string/copyright"
                 android:textColor="#64748B"
                 android:textSize="12sp"
                 android:gravity="center"
