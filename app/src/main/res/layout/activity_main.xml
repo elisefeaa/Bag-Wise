@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F2F6FC"
+    android:fitsSystemWindows="true">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#173B68"
+        android:elevation="4dp"
+        android:title="@string/app_name"
+        android:titleTextColor="#FFFFFF"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ExcessBaggagePopupTheme" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <!-- App Header -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="#173B68"
+                android:padding="22dp"
+                android:elevation="4dp">
+
+                <ImageView
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    android:src="@drawable/ic_app_icon"
+                    android:contentDescription="BagWise app icon"
+                    android:layout_marginBottom="14dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="BAG WISE"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:letterSpacing="0.08" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_tagline"
+                    android:textColor="#DCEBFA"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:layout_marginTop="8dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_description"
+                    android:textColor="#DCEBFA"
+                    android:textSize="13sp"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp" />
+
+            </LinearLayout>
+
+            <!-- Calculator Card -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#FFFFFF"
+                android:padding="20dp"
+                android:elevation="4dp"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="CALCULATE YOUR BAGGAGE FEE"
+                    android:textColor="#173B68"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="20dp" />
+
+                <!-- Weight -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Baggage Weight (kg)"
+                    android:textColor="#173B68"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etWeight"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:hint="Enter baggage weight"
+                    android:inputType="numberDecimal"
+                    android:padding="12dp"
+                    android:singleLine="true"
+                    android:textColor="#173B68"
+                    android:textColorHint="#94A3B8"
+                    android:backgroundTint="#477DB8" />
+
+                <!-- Ticket Class -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ticket Class"
+                    android:textColor="#173B68"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="22dp" />
+
+                <RadioGroup
+                    android:id="@+id/rgTicketClass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="8dp"
+                    android:checkedButton="@null">
+
+                    <RadioButton
+                        android:id="@+id/rbEconomy"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Economy (20 kg)"
+                        android:textColor="#173B68"
+                        android:buttonTint="#245B91"
+                        android:textSize="13sp" />
+
+                    <RadioButton
+                        android:id="@+id/rbBusiness"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Business (40 kg)"
+                        android:textColor="#173B68"
+                        android:buttonTint="#245B91"
+                        android:textSize="13sp" />
+
+                </RadioGroup>
+
+                <!-- Rate -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Excess Baggage Rate (RM/kg)"
+                    android:textColor="#173B68"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="22dp" />
+
+                <EditText
+                    android:id="@+id/etRate"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:hint="Enter rate per kg"
+                    android:inputType="numberDecimal"
+                    android:padding="12dp"
+                    android:singleLine="true"
+                    android:textColor="#173B68"
+                    android:textColorHint="#94A3B8"
+                    android:backgroundTint="#477DB8" />
+
+                <!-- Calculate Button -->
+                <Button
+                    android:id="@+id/btnCalculate"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:text="CALCULATE FEE"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:backgroundTint="#245B91"
+                    android:layout_marginTop="28dp" />
+
+                <!-- Reset Button -->
+                <Button
+                    android:id="@+id/btnReset"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:text="RESET"
+                    android:textColor="#173B68"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:backgroundTint="#DCE8F5"
+                    android:layout_marginTop="10dp" />
+
+            </LinearLayout>
+
+            <!-- Results Card -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#FFFFFF"
+                android:padding="20dp"
+                android:elevation="4dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="YOUR CALCULATION SUMMARY"
+                    android:textColor="#173B68"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="12dp" />
+
+                <TextView
+                    android:id="@+id/tvResult"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Your calculation results will appear here."
+                    android:textColor="#475569"
+                    android:textSize="15sp"
+                    android:lineSpacingExtra="5dp"
+                    android:padding="15dp"
+                    android:background="#F2F6FC" />
+
+            </LinearLayout>
+
+            <!-- Footer -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="© 2026 Bag Wise. All Rights Reserved."
+                android:textColor="#64748B"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:layout_marginBottom="15dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

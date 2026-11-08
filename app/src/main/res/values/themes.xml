@@ -1,0 +1,36 @@
+
+<resources>
+
+    <style name="Base.Theme.ExcessBaggageCalculator"
+        parent="Theme.Material3.Light.NoActionBar">
+
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryContainer">@color/primary_dark</item>
+        <item name="colorSecondary">@color/secondary</item>
+
+        <item name="android:statusBarColor">@color/primary_dark</item>
+        <item name="android:navigationBarColor">@color/primary_dark</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowBackground">@color/background</item>
+
+        <item name="android:textColorPrimary">#FFFFFF</item>
+        <item name="actionMenuTextColor">#FFFFFF</item>
+
+    </style>
+
+
+    <!-- Toolbar overflow menu theme -->
+    <style name="ExcessBaggagePopupTheme"
+        parent="ThemeOverlay.AppCompat.Dark">
+
+        <item name="android:colorBackground">#173B68</item>
+        <item name="android:popupBackground">#173B68</item>
+        <item name="android:textColorPrimary">#FFFFFF</item>
+
+    </style>
+
+
+    <style name="Theme.ExcessBaggageCalculator"
+        parent="Base.Theme.ExcessBaggageCalculator" />
+
+</resources>

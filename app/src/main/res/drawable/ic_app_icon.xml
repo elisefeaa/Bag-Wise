@@ -1,0 +1,57 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Navy blue background -->
+    <path
+        android:fillColor="#173B68"
+        android:pathData="M0,0 H108 V108 H0 Z" />
+
+    <!-- Suitcase body -->
+    <path
+        android:fillColor="#477DB8"
+        android:pathData="M19,36 Q19,31 25,31 H69 Q75,31 75,37 V83 Q75,89 69,89 H25 Q19,89 19,83 Z" />
+
+    <!-- Suitcase handle -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M34,31 V24 Q34,19 40,19 H54 Q60,19 60,24 V31 H55 V25 H39 V31 Z" />
+
+    <!-- Suitcase details -->
+    <path
+        android:fillColor="#173B68"
+        android:pathData="M29,38 H33 V82 H29 Z M61,38 H65 V82 H61 Z" />
+
+    <!-- Calculator body -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M57,49 Q57,45 62,45 H89 Q94,45 94,50 V88 Q94,93 89,93 H62 Q57,93 57,88 Z" />
+
+    <!-- Calculator display -->
+    <path
+        android:fillColor="#B9E3FF"
+        android:pathData="M62,51 H89 V64 H62 Z" />
+
+    <!-- Calculator display text -->
+    <path
+        android:fillColor="#173B68"
+        android:pathData="M78,55 H84 V60 H78 Z" />
+
+    <!-- Calculator buttons -->
+    <path
+        android:fillColor="#245B91"
+        android:pathData="M63,69 H72 V78 H63 Z M76,69 H85 V78 H76 Z M63,81 H72 V90 H63 Z M76,81 H85 V90 H76 Z" />
+
+    <!-- Yellow equals button -->
+    <path
+        android:fillColor="#FFB52E"
+        android:pathData="M88,81 H94 V90 H88 Z" />
+
+    <!-- Airplane symbol -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M25,12 L43,19 L52,15 L55,17 L47,23 L52,29 L49,30 L41,25 L31,29 L29,27 L36,22 L25,15 Z" />
+
+</vector>

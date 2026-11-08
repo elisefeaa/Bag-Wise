@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F2F6FC"
+    android:fitsSystemWindows="true">
+
+    <!-- ABOUT TOOLBAR -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/aboutToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#173B68"
+        android:elevation="4dp"
+        android:title="About Bag Wise"
+        android:titleTextColor="#FFFFFF" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:padding="22dp">
+
+            <!-- APP ICON AND NAME -->
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_app_icon"
+                android:contentDescription="Bag Wise app icon"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="BAG WISE"
+                android:textColor="#173B68"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:letterSpacing="0.08" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/app_tagline"
+                android:textColor="#64748B"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:layout_marginTop="5dp" />
+
+            <!-- ABOUT APP CARD -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#FFFFFF"
+                android:padding="20dp"
+                android:elevation="4dp"
+                android:layout_marginTop="25dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ABOUT THE APPLICATION"
+                    android:textColor="#173B68"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="12dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bag Wise is a mobile application designed to help travellers estimate their excess baggage fees before travelling. Users can enter their baggage weight, select their ticket class and provide the excess baggage rate to calculate the estimated total payment, including service tax."
+                    android:textColor="#475569"
+                    android:textSize="14sp"
+                    android:lineSpacingExtra="5dp" />
+
+            </LinearLayout>
+
+            <!-- DEVELOPER INFORMATION CARD -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#FFFFFF"
+                android:padding="20dp"
+                android:elevation="4dp"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="DEVELOPER INFORMATION"
+                    android:textColor="#173B68"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="15dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Developer Name"
+                    android:textColor="#64748B"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nurelise Sofea Binti Mohamed Faezal"
+                    android:textColor="#173B68"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="14dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Student Number"
+                    android:textColor="#64748B"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2024274304"
+                    android:textColor="#173B68"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="14dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Class Group"
+                    android:textColor="#64748B"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="CDCS2405A"
+                    android:textColor="#173B68"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="14dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Programme Code"
+                    android:textColor="#64748B"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ICT602"
+                    android:textColor="#173B68"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <!-- APP WEBSITE CARD -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#FFFFFF"
+                android:padding="20dp"
+                android:elevation="4dp"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="APP WEBSITE"
+                    android:textColor="#173B68"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="10dp" />
+
+                <TextView
+                    android:id="@+id/tvAppWebsite"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="GitHub Repository"
+                    android:textColor="#245B91"
+                    android:textSize="14sp"
+                    android:autoLink="web"
+                    android:linksClickable="true" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Visit the Bag Wise source code repository."
+                    android:textColor="#64748B"
+                    android:textSize="12sp"
+                    android:layout_marginTop="7dp" />
+
+            </LinearLayout>
+
+            <!-- COPYRIGHT -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="© 2026 Bag Wise. All Rights Reserved."
+                android:textColor="#64748B"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="20dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

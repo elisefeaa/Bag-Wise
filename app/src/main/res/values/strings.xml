@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Application Name -->
+    <string name="app_name">Bag Wise</string>
+
+    <!-- Application Tagline -->
+    <string name="app_tagline">Pack Smart. Fly Easy.</string>
+
+    <!-- Application Description -->
+    <string name="app_description">Your smart companion for calculating excess baggage fees.</string>
+
+</resources>
